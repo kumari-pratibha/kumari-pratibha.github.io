@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
+
+A modern, responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion. This portfolio is designed to showcase your work, skills, and projects in a clean, professional manner.
+
+## Features
+
+- 🎨 Modern, clean design inspired by contemporary portfolio websites
+- 📱 Fully responsive across all devices
+- ⚡ Smooth animations and transitions with Framer Motion
+- 🚀 Optimized for performance and SEO
+- 🌐 Ready for GitHub Pages deployment
+- 🎯 Accessible and user-friendly
+
+## Sections
+
+- **Hero Section**: Eye-catching introduction with call-to-action buttons
+- **About**: Personal information and professional summary
+- **Skills**: Technology stack and expertise areas
+- **Projects**: Featured work with project details and links
+- **Contact**: Multiple ways to get in touch
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/my-portfolio.git
+cd my-portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Personal Information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Update the following in `app/page.tsx`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Name**: Replace "Shubham" with your name
+2. **Email**: Update the email address in the contact section
+3. **Social Links**: Update LinkedIn and GitHub URLs
+4. **About Section**: Modify the personal description
+5. **Projects**: Replace the sample projects with your actual work
+6. **Skills**: Update the technology stack to match your expertise
 
-## Deploy on Vercel
+### Styling
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The website uses Tailwind CSS for styling. You can customize:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Colors in the `tailwind.config.js` file
+- Typography and spacing in the component files
+- Animations and transitions in the Framer Motion components
+
+### Images
+
+Replace placeholder images with your actual photos and project screenshots:
+
+1. Add your profile photo to the about section
+2. Add project images to the projects section
+3. Update the favicon in the `public` folder
+
+## Deployment to GitHub Pages
+
+### Automatic Deployment (Recommended)
+
+1. Push your code to the `main` branch
+2. Go to your repository's Settings > Pages
+3. Select "GitHub Actions" as the source
+4. The workflow will automatically deploy your site
+
+### Manual Deployment
+
+1. Build the project:
+```bash
+npm run build
+```
+
+2. The static files will be in the `out` folder
+3. Push the `out` folder contents to the `gh-pages` branch
+
+## Technologies Used
+
+- **Next.js 15** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **GitHub Pages** - Hosting platform
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Contributing
+
+Feel free to fork this project and customize it for your own portfolio. If you make improvements that could benefit others, pull requests are welcome!
+
+## Support
+
+If you have any questions or need help customizing this portfolio, please open an issue on GitHub.

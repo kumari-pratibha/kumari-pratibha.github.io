@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://pratibhadesign.in",
+    url: "https://kumari-pratibha.github.io",
     title: "Kumari Pratibha - Portfolio | Product Designer (UI/UX)",
     description: "Product Designer with 6+ years of experience translating complex workflows into intuitive, user-centered interfaces. Specialized in user research, design systems, and creating seamless cross-platform experiences.",
     siteName: "Kumari Pratibha Portfolio",

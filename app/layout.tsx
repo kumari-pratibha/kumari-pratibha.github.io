@@ -15,23 +15,23 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Shubham - Portfolio | Full-Stack Developer & UI/UX Designer",
-  description: "Professional portfolio showcasing my expertise in UI/UX design, web development, and digital marketing. Specializing in modern web technologies and creating exceptional user experiences.",
-  keywords: "portfolio, web developer, UI/UX designer, full-stack developer, React, Next.js, Tailwind CSS",
-  authors: [{ name: "Shubham" }],
-  creator: "Shubham",
+  title: "Kumari Pratibha - Portfolio | Product Designer (UI/UX)",
+  description: "Product Designer with 6+ years of experience translating complex workflows into intuitive, user-centered interfaces. Specialized in user research, design systems, and creating seamless cross-platform experiences.",
+  keywords: "portfolio, product designer, UI/UX designer, user research, design systems, Figma, user experience, accessibility, wireframing, prototyping",
+  authors: [{ name: "Kumari Pratibha" }],
+  creator: "Kumari Pratibha",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-portfolio.com",
-    title: "Shubham - Portfolio | Full-Stack Developer & UI/UX Designer",
-    description: "Professional portfolio showcasing my expertise in UI/UX design, web development, and digital marketing.",
-    siteName: "Shubham Portfolio",
+    url: "https://pratibhadesign.in",
+    title: "Kumari Pratibha - Portfolio | Product Designer (UI/UX)",
+    description: "Product Designer with 6+ years of experience translating complex workflows into intuitive, user-centered interfaces. Specialized in user research, design systems, and creating seamless cross-platform experiences.",
+    siteName: "Kumari Pratibha Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shubham - Portfolio | Full-Stack Developer & UI/UX Designer",
-    description: "Professional portfolio showcasing my expertise in UI/UX design, web development, and digital marketing.",
+    title: "Kumari Pratibha - Portfolio | Product Designer (UI/UX)",
+    description: "Product Designer with 6+ years of experience translating complex workflows into intuitive, user-centered interfaces. Specialized in user research, design systems, and creating seamless cross-platform experiences.",
   },
   robots: {
     index: true,

@@ -21,48 +21,48 @@ export default function Home() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "API Manager Platform",
       category: "Product Design",
-      role: "Full-Stack Developer & UI/UX Designer",
+      role: "Product Designer",
       image: "/images/project-01.png",
-      logo: "ECOM",
+      logo: "API",
       link: "#",
-      description: "A comprehensive e-commerce solution with modern design and seamless user experience",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      description: "End-to-end API management platform enabling users to create APIs with AI, publish them on servers, and deploy seamlessly across gateways. Improved usability through intuitive UI patterns like wizard steppers and contextual help guides.",
+      technologies: ["Figma", "User Research", "Design System", "AI Integration"],
       year: "2024"
     },
     {
-      title: "Task Management App",
+      title: "ASH Assistant",
       category: "UX Design",
-      role: "Product Designer & Frontend Developer",
+      role: "Product Designer",
       image: "/images/project-02.png",
-      logo: "TASK",
+      logo: "ASH",
       link: "#",
-      description: "Collaborative task management with real-time updates and intuitive interface",
-      technologies: ["Next.js", "TypeScript", "Socket.io", "PostgreSQL"],
+      description: "Conversational API interface that transforms technical workflows into natural, user-friendly interactions, reducing cognitive load for developers and architects.",
+      technologies: ["Conversational UI", "User Flows", "Prototyping", "Figma"],
       year: "2024"
     },
     {
-      title: "Portfolio Website",
+      title: "API Sandbox Platform",
       category: "Design System",
-      role: "UI/UX Designer & Developer",
+      role: "Product Designer",
       image: "/images/project-03.png",
-      logo: "PORT",
+      logo: "SAN",
       link: "#",
-      description: "Modern portfolio website with custom design system and smooth animations",
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      description: "Progressive user experience platform for API prototyping, testing, and validation phases. Designed with scalable design system and accessibility guidelines.",
+      technologies: ["Design System", "Accessibility", "Wireframing", "User Testing"],
       year: "2024"
     },
     {
-      title: "Mobile Banking App",
+      title: "Enterprise Dashboards",
       category: "Product Design",
-      role: "UX Designer & Product Manager",
+      role: "UI/UX Designer",
       image: "/images/project-04.png",
-      logo: "BANK",
+      logo: "ENT",
       link: "#",
-      description: "Secure mobile banking application with focus on user experience and accessibility",
-      technologies: ["React Native", "Node.js", "PostgreSQL", "JWT"],
-      year: "2023"
+      description: "Multiple enterprise client dashboards focusing on data visualization and workflow efficiency. Specialized in design-first approach with seamless design-to-development integration.",
+      technologies: ["Data Visualization", "Figma", "HTML", "CSS"],
+      year: "2022"
     }
   ];
 
@@ -84,7 +84,7 @@ export default function Home() {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
               <a href="/" className="flex items-center">
-                <Image 
+        <Image
                   src="/images/logo-dark.svg" 
                   alt="Logo" 
                   width={120}
@@ -97,6 +97,7 @@ export default function Home() {
             <nav className="hidden md:flex items-center space-x-8">
               <a href="#home" className="text-slate-300 hover:text-white transition-colors font-medium">Home</a>
               <a href="#about" className="text-slate-300 hover:text-white transition-colors font-medium">About</a>
+              <a href="#skills" className="text-slate-300 hover:text-white transition-colors font-medium">Skills</a>
               <a href="#projects" className="text-slate-300 hover:text-white transition-colors font-medium">Projects</a>
               <a href="#contact" className="text-slate-300 hover:text-white transition-colors font-medium">Contact</a>
             </nav>
@@ -128,6 +129,7 @@ export default function Home() {
               <nav className="flex flex-col space-y-4">
                 <a href="#home" className="text-slate-300 hover:text-white transition-colors font-medium">Home</a>
                 <a href="#about" className="text-slate-300 hover:text-white transition-colors font-medium">About</a>
+                <a href="#skills" className="text-slate-300 hover:text-white transition-colors font-medium">Skills</a>
                 <a href="#projects" className="text-slate-300 hover:text-white transition-colors font-medium">Projects</a>
                 <a href="#contact" className="text-slate-300 hover:text-white transition-colors font-medium">Contact</a>
               </nav>
@@ -175,15 +177,16 @@ export default function Home() {
               >
                 <div className="space-y-4">
                   <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
-                    We specialize in{' '}
+                    Hi, I'm{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                      UI/UX Design
+                      Kumari Pratibha
                     </span>
-                    , Web Development, Digital Marketing.
+                    , Product Designer with 6+ years of experience.
                   </h1>
                   <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris. 
-                    Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna.
+                    I specialize in translating complex workflows into intuitive, user-centered interfaces. 
+                    Expert in user research, design systems, and creating seamless cross-platform experiences 
+                    that improve usability and drive business growth.
                   </p>
                 </div>
 
@@ -195,10 +198,10 @@ export default function Home() {
                     Get Started Now
                   </a>
                   <div className="flex items-center space-x-4 text-slate-300">
-                    <a href="tel:+1234567890" className="font-semibold hover:text-blue-400 transition-colors">
-                      Call us (0123) 456 – 789
+                    <a href="tel:+918018148972" className="font-semibold hover:text-blue-400 transition-colors">
+                      Call me +91-8018148972
                     </a>
-                    <span>For any question or concern</span>
+                    <span>For any project discussion</span>
                   </div>
                 </div>
               </motion.div>
@@ -246,8 +249,8 @@ export default function Home() {
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Image src="/images/icon-01.svg" alt="Icon" width={32} height={32} />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">24/7 Support</h3>
-                <p className="text-slate-300">Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+                <h3 className="text-xl font-bold text-white mb-4">User Research</h3>
+                <p className="text-slate-300">In-depth user research with developers, architects, and stakeholders to identify pain points and translate them into actionable UI/UX solutions.</p>
               </motion.div>
 
               {/* Feature 2 */}
@@ -261,8 +264,8 @@ export default function Home() {
                 <div className="w-16 h-16 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Image src="/images/icon-02.svg" alt="Icon" width={32} height={32} />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Take Ownership</h3>
-                <p className="text-slate-300">Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+                <h3 className="text-xl font-bold text-white mb-4">Design Systems</h3>
+                <p className="text-slate-300">Building scalable design systems from the ground up, establishing reusable components and accessibility guidelines that improve consistency and accelerate development.</p>
               </motion.div>
 
               {/* Feature 3 */}
@@ -276,11 +279,121 @@ export default function Home() {
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Image src="/images/icon-03.svg" alt="Icon" width={32} height={32} />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Team Work</h3>
-                <p className="text-slate-300">Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+                <h3 className="text-xl font-bold text-white mb-4">Cross-functional Collaboration</h3>
+                <p className="text-slate-300">Collaborating with product managers, developers, and architects to align design vision with technical feasibility and business goals.</p>
               </motion.div>
             </div>
         </div>
+        </section>
+
+        {/* Skills Section */}
+        <section id="skills" className="py-16 lg:py-24 bg-slate-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+                Skills & Expertise
+              </h2>
+              <p className="text-lg text-slate-300 max-w-3xl mx-auto">
+                My comprehensive skill set spans across design tools, research methods, and development technologies.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Design Tools */}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-slate-700 rounded-2xl p-6 text-center group hover:bg-slate-600 transition-colors duration-300"
+              >
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Design Tools</h3>
+                <div className="space-y-2">
+                  <span className="block text-slate-300 text-sm">Figma</span>
+                  <span className="block text-slate-300 text-sm">Adobe XD</span>
+                  <span className="block text-slate-300 text-sm">Lovable</span>
+                  <span className="block text-slate-300 text-sm">Bolt</span>
+                </div>
+              </motion.div>
+
+              {/* Research & Testing */}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-slate-700 rounded-2xl p-6 text-center group hover:bg-slate-600 transition-colors duration-300"
+              >
+                <div className="w-12 h-12 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Research & Testing</h3>
+                <div className="space-y-2">
+                  <span className="block text-slate-300 text-sm">User Research</span>
+                  <span className="block text-slate-300 text-sm">Usability Testing</span>
+                  <span className="block text-slate-300 text-sm">A/B Testing</span>
+                  <span className="block text-slate-300 text-sm">Journey Mapping</span>
+                </div>
+              </motion.div>
+
+              {/* Design Process */}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-slate-700 rounded-2xl p-6 text-center group hover:bg-slate-600 transition-colors duration-300"
+              >
+                <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-purple-700 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Design Process</h3>
+                <div className="space-y-2">
+                  <span className="block text-slate-300 text-sm">Wireframing</span>
+                  <span className="block text-slate-300 text-sm">Prototyping</span>
+                  <span className="block text-slate-300 text-sm">Design Systems</span>
+                  <span className="block text-slate-300 text-sm">Accessibility</span>
+                </div>
+              </motion.div>
+
+              {/* Development */}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-slate-700 rounded-2xl p-6 text-center group hover:bg-slate-600 transition-colors duration-300"
+              >
+                <div className="w-12 h-12 bg-gradient-to-r from-orange-600 to-orange-700 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Development</h3>
+                <div className="space-y-2">
+                  <span className="block text-slate-300 text-sm">HTML</span>
+                  <span className="block text-slate-300 text-sm">CSS</span>
+                  <span className="block text-slate-300 text-sm">Design Integration</span>
+                  <span className="block text-slate-300 text-sm">Responsive Design</span>
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </section>
 
         {/* About Section */}
@@ -354,13 +467,14 @@ export default function Home() {
                 className="space-y-8"
               >
                 <div className="space-y-4">
-                  <h4 className="text-blue-600 font-semibold text-lg">Why Choose Us</h4>
+                  <h4 className="text-blue-600 font-semibold text-lg">About Me</h4>
                   <h2 className="text-4xl lg:text-5xl font-bold text-white">
-                    We Make Our customers happy by giving Best services.
+                    Product Designer with 6+ years of experience creating exceptional user experiences.
                   </h2>
                   <p className="text-lg text-slate-300 leading-relaxed">
-                    It is a long established fact that a reader will be distracted by the readable content of a
-                    page when looking at its layout. The point of using Lorem Ipsum.
+                    I specialize in translating complex workflows into intuitive, user-centered interfaces. 
+                    With expertise in user research, interaction design, information architecture, and design systems, 
+                    I've consistently improved usability and increased conversion rates across various platforms.
                   </p>
                 </div>
 
@@ -374,7 +488,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <span className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors">
-                    SEE HOW WE WORK
+                    VIEW MY PORTFOLIO
                   </span>
                 </a>
               </motion.div>
@@ -394,11 +508,11 @@ export default function Home() {
               className="text-center mb-16"
             >
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-                Our Latest Projects
+                My Recent Work
               </h2>
               <p className="text-lg text-slate-300 max-w-3xl mx-auto">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. 
-                Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+                Here are some of my recent projects showcasing my expertise in product design, 
+                user experience, and design systems across various industries and platforms.
               </p>
             </motion.div>
 
@@ -540,23 +654,24 @@ export default function Home() {
               className="text-center"
             >
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-                Ready to Get Started?
+                Let's Work Together
               </h2>
               <p className="text-lg text-slate-300 mb-12 max-w-2xl mx-auto">
-                Let's discuss your project and see how we can help bring your ideas to life.
+                Ready to create exceptional user experiences? Let's discuss your next project 
+                and see how I can help bring your ideas to life with thoughtful design.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="mailto:contact@example.com" 
+                  href="mailto:prtbh1996@gmail.com" 
                   className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg shadow-blue-500/25"
                 >
                   Get In Touch
         </a>
-                <a 
-                  href="tel:+1234567890" 
+        <a
+                  href="tel:+918018148972" 
                   className="border-2 border-slate-600 text-slate-300 px-8 py-4 rounded-full font-semibold hover:border-blue-600 hover:text-blue-400 transition-all duration-300"
                 >
-                  Call Us Now
+                  Call Me Now
                 </a>
               </div>
             </motion.div>
@@ -568,8 +683,40 @@ export default function Home() {
       <footer className="bg-slate-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
+            {/* Social Links */}
+            <div className="flex justify-center space-x-6 mb-6">
+              <a 
+                href="https://linkedin.com/in/kumaripratibha02" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </a>
+              <a 
+                href="https://behance.net/pratibhaagrawal" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.922 1.355-3.968.354-1.043-.999-1.03-2.664.354-3.968 1.297-.442 2.922-1.355 3.968-.354 1.043.999 1.03 2.664-.354 3.968zm-8.79-2.5c0 1.933-1.567 3.5-3.5 3.5s-3.5-1.567-3.5-3.5 1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5zm-.5 0c0-1.657-1.343-3-3-3s-3 1.343-3 3 1.343 3 3 3 3-1.343 3-3zm-6.5-1c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5zm-5.5 1.5c0-2.485 2.015-4.5 4.5-4.5s4.5 2.015 4.5 4.5-2.015 4.5-4.5 4.5-4.5-2.015-4.5-4.5zm4.5-3.5c-1.933 0-3.5 1.567-3.5 3.5s1.567 3.5 3.5 3.5 3.5-1.567 3.5-3.5-1.567-3.5-3.5-3.5z"/>
+                </svg>
+              </a>
+              <a 
+                href="mailto:prtbh1996@gmail.com" 
+                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </a>
+            </div>
+            
             <p className="text-slate-400 mb-4">
-              © 2024 Shubham. All rights reserved.
+              © 2024 Kumari Pratibha. All rights reserved.
             </p>
             <p className="text-slate-500 text-sm">
               Built with Next.js, Tailwind CSS, and Framer Motion

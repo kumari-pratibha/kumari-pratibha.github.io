@@ -17,7 +17,7 @@ export default function Home() {
       setStickyMenu(window.pageYOffset > 20);
       
       // Detect active section based on scroll position
-      const sections = ['home', 'about', 'process', 'projects', 'skills', 'contact'];
+      const sections = ['home', 'about', 'process', 'projects', 'contact'];
       const scrollPosition = window.pageYOffset + 100; // Offset for better detection
       
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -142,16 +142,6 @@ export default function Home() {
                   }`}
                 >
                   Projects
-                </a>
-                <a 
-                  href="#skills" 
-                  className={`transition-colors font-normal ${
-                    activeSection === 'skills' 
-                      ? 'text-pink-500 font-medium' 
-                      : 'text-gray-600 hover:text-gray-900'
-                  }`}
-                >
-                  Skills
                 </a>
                 <a 
                   href="#contact" 
@@ -624,111 +614,7 @@ export default function Home() {
           </div>
         </section>
 
-         {/* Skills Section */}
-        <section id="skills" className="py-16 lg:py-24 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl lg:text-5xl font-normal text-gray-900 mb-6">
-                Skills & Expertise
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                A balanced toolkit for research, interaction design and implementation — from concept to handoff.
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Design Tools */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-2xl p-6 text-center group hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-pink-200"
-              >
-                <div className="w-12 h-12 bg-gradient-to-r from-pink-50 to-pink-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-4">Design Tools</h3>
-                <div className="space-y-2">
-                  <span className="block text-gray-600 text-sm font-normal">Figma</span>
-                  <span className="block text-gray-600 text-sm font-normal">Adobe XD</span>
-                </div>
-              </motion.div>
-
-              {/* AI Prototyping */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-2xl p-6 text-center group hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-pink-200"
-              >
-                <div className="w-12 h-12 bg-gradient-to-r from-pink-50 to-pink-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-4">AI Prototyping</h3>
-                <div className="space-y-2">
-                  <span className="block text-gray-600 text-sm font-normal">Lovable</span>
-                  <span className="block text-gray-600 text-sm font-normal">Bolt</span>
-                </div>
-              </motion.div>
-
-              {/* Research & Testing */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-2xl p-6 text-center group hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-pink-200"
-              >
-                <div className="w-12 h-12 bg-gradient-to-r from-pink-50 to-pink-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-4">Research & Testing</h3>
-                <div className="space-y-2">
-                  <span className="block text-gray-600 text-sm font-normal">User Research</span>
-                  <span className="block text-gray-600 text-sm font-normal">Usability Testing</span>
-                  <span className="block text-gray-600 text-sm font-normal">A/B Testing</span>
-                  <span className="block text-gray-600 text-sm font-normal">Journey Mapping</span>
-                </div>
-              </motion.div>
-
-              {/* Design Process */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-2xl p-6 text-center group hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-pink-200"
-              >
-                <div className="w-12 h-12 bg-gradient-to-r from-pink-50 to-pink-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-4">Design Process</h3>
-                <div className="space-y-2">
-                  <span className="block text-gray-600 text-sm font-normal">Wireframing</span>
-                  <span className="block text-gray-600 text-sm font-normal">Prototyping</span>
-                  <span className="block text-gray-600 text-sm font-normal">Design Systems</span>
-                  <span className="block text-gray-600 text-sm font-normal">Accessibility</span>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
+  
 
         {/* Contact Section */}
         <section id="contact" className="py-6 lg:py-8 bg-gray-50">

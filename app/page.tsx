@@ -73,18 +73,18 @@ export default function Home() {
   const categories = ['All', 'Product Design', 'Design System', 'UX Design', 'Branding'];
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white">
+    <div className="min-h-screen bg-white text-gray-900">
       {/* Header */}
       <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         stickyMenu 
-          ? 'bg-slate-900/95 backdrop-blur-md shadow-lg border-b border-slate-800' 
+          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200' 
           : 'bg-transparent'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
               <a href="/" className="flex items-center" aria-label="Home">
-                <Image
+        <Image
                   src="/images/logo-dark.svg" 
                   alt="Kumari Pratibha logo" 
                   width={120}
@@ -95,19 +95,19 @@ export default function Home() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8" aria-label="Primary">
-              <a href="#home" className="text-slate-300 hover:text-white transition-colors font-medium">Home</a>
-              <a href="#about" className="text-slate-300 hover:text-white transition-colors font-medium">About</a>
-              <a href="#skills" className="text-slate-300 hover:text-white transition-colors font-medium">Skills</a>
-              <a href="#projects" className="text-slate-300 hover:text-white transition-colors font-medium">Projects</a>
-              <a href="#contact" className="text-slate-300 hover:text-white transition-colors font-medium">Contact</a>
+              <a href="#home" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Home</a>
+              <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">About</a>
+              <a href="#skills" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Skills</a>
+              <a href="#projects" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Projects</a>
+              <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Contact</a>
             </nav>
 
             <div className="flex items-center space-x-4">
               {/* CTA Button */}
               <a 
                  href="https://behance.net/pratibhaagrawal" 
-                 target="_blank" 
-                 rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                  aria-label="Behance" 
                 className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg shadow-blue-500/25"
               >
@@ -117,10 +117,10 @@ export default function Home() {
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setNavigationOpen(!navigationOpen)}
-                className="md:hidden p-2 rounded-lg bg-slate-800 hover:bg-slate-700 transition-colors"
+                className="md:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
                 aria-label="Toggle navigation"
               >
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
@@ -129,13 +129,13 @@ export default function Home() {
 
           {/* Mobile Navigation */}
           {navigationOpen && (
-            <div className="md:hidden py-4 border-t border-slate-800">
+            <div className="md:hidden py-4 border-t border-gray-200">
               <nav className="flex flex-col space-y-4" aria-label="Mobile">
-                <a href="#home" className="text-slate-300 hover:text-white transition-colors font-medium">Home</a>
-                <a href="#about" className="text-slate-300 hover:text-white transition-colors font-medium">About</a>
-                <a href="#skills" className="text-slate-300 hover:text-white transition-colors font-medium">Skills</a>
-                <a href="#projects" className="text-slate-300 hover:text-white transition-colors font-medium">Projects</a>
-                <a href="#contact" className="text-slate-300 hover:text-white transition-colors font-medium">Contact</a>
+                <a href="#home" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Home</a>
+                <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">About</a>
+                <a href="#skills" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Skills</a>
+                <a href="#projects" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Projects</a>
+                <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Contact</a>
               </nav>
             </div>
           )}
@@ -180,14 +180,14 @@ export default function Home() {
                 className="space-y-8"
               >
                 <div className="space-y-4">
-                  <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
+                  <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                     Hi, I'm{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
                       Kumari Pratibha
                     </span>
                     , Product Designer with 6+ years of experience.
                   </h1>
-                  <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">
+                  <p className="text-lg text-gray-600 leading-relaxed max-w-2xl">
                     I specialize in translating complex workflows into intuitive, user-centered interfaces. 
                     I focus on user research, design systems, and accessible, cross-platform experiences that
                     improve usability and drive measurable business outcomes.
@@ -238,8 +238,8 @@ export default function Home() {
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300" aria-hidden>
                   <Image src="/images/icon-01.svg" alt="" width={32} height={32} />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">User Research</h3>
-                <p className="text-slate-300">Qualitative and quantitative research to uncover user needs and validate design decisions.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">User Research</h3>
+                <p className="text-gray-600">Qualitative and quantitative research to uncover user needs and validate design decisions.</p>
               </motion.div>
 
               {/* Feature 2 */}
@@ -253,8 +253,8 @@ export default function Home() {
                 <div className="w-16 h-16 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300" aria-hidden>
                   <Image src="/images/icon-02.svg" alt="" width={32} height={32} />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Design Systems</h3>
-                <p className="text-slate-300">Create consistent, reusable component libraries and accessibility guidelines to scale design across teams.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Design Systems</h3>
+                <p className="text-gray-600">Create consistent, reusable component libraries and accessibility guidelines to scale design across teams.</p>
               </motion.div>
 
               {/* Feature 3 */}
@@ -268,15 +268,15 @@ export default function Home() {
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300" aria-hidden>
                   <Image src="/images/icon-03.svg" alt="" width={32} height={32} />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Cross-functional Collaboration</h3>
-                <p className="text-slate-300">Work closely with PMs and engineers to align product goals with technical constraints and deliverables.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Cross-functional Collaboration</h3>
+                <p className="text-gray-600">Work closely with PMs and engineers to align product goals with technical constraints and deliverables.</p>
               </motion.div>
             </div>
         </div>
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-16 lg:py-32 bg-slate-800">
+        <section id="about" className="py-16 lg:py-32 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               {/* About Images */}
@@ -347,10 +347,10 @@ export default function Home() {
               >
                 <div className="space-y-4">
                   <h4 className="text-blue-600 font-semibold text-lg">About Me</h4>
-                  <h2 className="text-4xl lg:text-5xl font-bold text-white">
+                  <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
                     Product Designer focused on clarity, usability and scalable systems.
                   </h2>
-                  <p className="text-lg text-slate-300 leading-relaxed">
+                  <p className="text-lg text-gray-600 leading-relaxed">
                     I turn complex workflows into clear, human-centered products. My strengths include user research, interaction design, information architecture, and building design systems that speed delivery and ensure accessibility.
                   </p>
                 </div>
@@ -360,8 +360,8 @@ export default function Home() {
           </div>
         </section>
 
-{/* Skills Section */}
-<section id="skills" className="py-16 lg:py-24 bg-slate-800">
+ {/* Skills Section */}
+ <section id="skills" className="py-16 lg:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -370,10 +370,10 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Skills & Expertise
               </h2>
-              <p className="text-lg text-slate-300 max-w-3xl mx-auto">
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 A balanced toolkit for research, interaction design and implementation — from concept to handoff.
               </p>
             </motion.div>
@@ -385,19 +385,19 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="bg-slate-700 rounded-2xl p-6 text-center group hover:bg-slate-600 transition-colors duration-300"
+                className="bg-gray-50 rounded-2xl p-6 text-center group hover:bg-gray-100 transition-colors duration-300 border border-gray-200"
               >
                 <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" aria-hidden>
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Design Tools</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Design Tools</h3>
                 <div className="space-y-2">
-                  <span className="block text-slate-300 text-sm">Figma</span>
-                  <span className="block text-slate-300 text-sm">Adobe XD</span>
-                  <span className="block text-slate-300 text-sm">Lovable</span>
-                  <span className="block text-slate-300 text-sm">Bolt</span>
+                  <span className="block text-gray-600 text-sm">Figma</span>
+                  <span className="block text-gray-600 text-sm">Adobe XD</span>
+                  <span className="block text-gray-600 text-sm">Lovable</span>
+                  <span className="block text-gray-600 text-sm">Bolt</span>
                 </div>
               </motion.div>
 
@@ -407,19 +407,19 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="bg-slate-700 rounded-2xl p-6 text-center group hover:bg-slate-600 transition-colors duration-300"
+                className="bg-gray-50 rounded-2xl p-6 text-center group hover:bg-gray-100 transition-colors duration-300 border border-gray-200"
               >
                 <div className="w-12 h-12 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" aria-hidden>
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Research & Testing</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Research & Testing</h3>
                 <div className="space-y-2">
-                  <span className="block text-slate-300 text-sm">User Research</span>
-                  <span className="block text-slate-300 text-sm">Usability Testing</span>
-                  <span className="block text-slate-300 text-sm">A/B Testing</span>
-                  <span className="block text-slate-300 text-sm">Journey Mapping</span>
+                  <span className="block text-gray-600 text-sm">User Research</span>
+                  <span className="block text-gray-600 text-sm">Usability Testing</span>
+                  <span className="block text-gray-600 text-sm">A/B Testing</span>
+                  <span className="block text-gray-600 text-sm">Journey Mapping</span>
                 </div>
               </motion.div>
 
@@ -429,19 +429,19 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="bg-slate-700 rounded-2xl p-6 text-center group hover:bg-slate-600 transition-colors duration-300"
+                className="bg-gray-50 rounded-2xl p-6 text-center group hover:bg-gray-100 transition-colors duration-300 border border-gray-200"
               >
                 <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-purple-700 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" aria-hidden>
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Design Process</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Design Process</h3>
                 <div className="space-y-2">
-                  <span className="block text-slate-300 text-sm">Wireframing</span>
-                  <span className="block text-slate-300 text-sm">Prototyping</span>
-                  <span className="block text-slate-300 text-sm">Design Systems</span>
-                  <span className="block text-slate-300 text-sm">Accessibility</span>
+                  <span className="block text-gray-600 text-sm">Wireframing</span>
+                  <span className="block text-gray-600 text-sm">Prototyping</span>
+                  <span className="block text-gray-600 text-sm">Design Systems</span>
+                  <span className="block text-gray-600 text-sm">Accessibility</span>
                 </div>
               </motion.div>
 
@@ -451,19 +451,19 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="bg-slate-700 rounded-2xl p-6 text-center group hover:bg-slate-600 transition-colors duration-300"
+                className="bg-gray-50 rounded-2xl p-6 text-center group hover:bg-gray-100 transition-colors duration-300 border border-gray-200"
               >
                 <div className="w-12 h-12 bg-gradient-to-r from-orange-600 to-orange-700 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" aria-hidden>
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Development</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Development</h3>
                 <div className="space-y-2">
-                  <span className="block text-slate-300 text-sm">HTML</span>
-                  <span className="block text-slate-300 text-sm">CSS</span>
-                  <span className="block text-slate-300 text-sm">Design Integration</span>
-                  <span className="block text-slate-300 text-sm">Responsive Design</span>
+                  <span className="block text-gray-600 text-sm">HTML</span>
+                  <span className="block text-gray-600 text-sm">CSS</span>
+                  <span className="block text-gray-600 text-sm">Design Integration</span>
+                  <span className="block text-gray-600 text-sm">Responsive Design</span>
                 </div>
               </motion.div>
             </div>
@@ -481,10 +481,10 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Selected Projects
               </h2>
-              <p className="text-lg text-slate-300 max-w-3xl mx-auto">
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 A selection of recent work highlighting product design, UX and system thinking.
               </p>
             </motion.div>
@@ -498,7 +498,7 @@ export default function Home() {
                   className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
                     activeFilter === category
                       ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-500/25'
-                      : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
                 >
                   {category}
@@ -521,7 +521,7 @@ export default function Home() {
                   tabIndex={0}
                   onKeyDown={(e) => { if (e.key === 'Enter') window.open(project.link, '_blank'); }}
                 >
-                  <div className="bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:scale-105 border border-slate-700">
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:scale-105 border border-gray-200">
                     {/* Project Image */}
                     <div className="relative h-64 overflow-hidden">
                       <Image
@@ -542,7 +542,7 @@ export default function Home() {
                       
                       {/* Year Badge */}
                       <div className="absolute top-4 right-4">
-                        <span className="bg-slate-900/80 text-white px-3 py-1 rounded-full text-xs font-medium">
+                        <span className="bg-gray-900/80 text-white px-3 py-1 rounded-full text-xs font-medium">
                           {project.year}
                         </span>
                       </div>
@@ -561,7 +561,7 @@ export default function Home() {
                     {/* Project Content */}
                     <div className="p-6">
                       <div className="flex items-start justify-between mb-3">
-                        <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">
+                        <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                           {project.title}
                         </h3>
                         <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 ml-3" aria-hidden>
@@ -569,20 +569,20 @@ export default function Home() {
                         </div>
                       </div>
                       
-                      <p className="text-slate-400 text-sm mb-2 font-medium">Role</p>
-                      <p className="text-slate-300 text-sm mb-4 leading-relaxed">{project.role}</p>
+                      <p className="text-gray-500 text-sm mb-2 font-medium">Role</p>
+                      <p className="text-gray-700 text-sm mb-4 leading-relaxed">{project.role}</p>
                       
-                      <p className="text-slate-400 text-sm mb-2 font-medium">Description</p>
-                      <p className="text-slate-300 text-sm mb-4 leading-relaxed">{project.description}</p>
+                      <p className="text-gray-500 text-sm mb-2 font-medium">Description</p>
+                      <p className="text-gray-700 text-sm mb-4 leading-relaxed">{project.description}</p>
                       
                       {/* Technologies */}
                       <div className="mb-4">
-                        <p className="text-slate-400 text-sm mb-2 font-medium">Technologies</p>
+                        <p className="text-gray-500 text-sm mb-2 font-medium">Technologies</p>
                         <div className="flex flex-wrap gap-2">
                           {project.technologies.map((tech, techIndex) => (
                             <span
                               key={techIndex}
-                              className="bg-slate-700 text-slate-300 px-2 py-1 rounded-md text-xs font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
+                              className="bg-gray-100 text-gray-700 px-2 py-1 rounded-md text-xs font-medium hover:bg-blue-600 hover:text-white transition-colors duration-200"
                             >
                               {tech}
                             </span>
@@ -591,21 +591,21 @@ export default function Home() {
                       </div>
                       
                       {/* Action Button */}
-                      <div className="flex items-center justify-between pt-4 border-t border-slate-600">
-                        <div className="flex items-center text-blue-500 text-sm font-semibold group-hover:text-blue-400 transition-colors duration-300">
+                      <div className="flex items-center justify-between pt-4 border-t border-gray-200">
+                        <div className="flex items-center text-blue-600 text-sm font-semibold group-hover:text-blue-500 transition-colors duration-300">
                           <span>View details</span>
                           <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                           </svg>
                         </div>
                         <div className="flex space-x-2">
-                          <button aria-label="Like" className="p-2 bg-slate-700 hover:bg-blue-600 rounded-lg transition-colors duration-200">
-                            <svg className="w-4 h-4 text-slate-300 hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <button aria-label="Like" className="p-2 bg-gray-100 hover:bg-blue-600 rounded-lg transition-colors duration-200">
+                            <svg className="w-4 h-4 text-gray-600 hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
                           </button>
-                          <button aria-label="Share" className="p-2 bg-slate-700 hover:bg-indigo-600 rounded-lg transition-colors duration-200">
-                            <svg className="w-4 h-4 text-slate-300 hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <button aria-label="Share" className="p-2 bg-gray-100 hover:bg-indigo-600 rounded-lg transition-colors duration-200">
+                            <svg className="w-4 h-4 text-gray-600 hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
                             </svg>
                           </button>
@@ -620,7 +620,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-16 lg:py-32 bg-slate-800">
+        <section id="contact" className="py-16 lg:py-32 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -629,11 +629,11 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Let's Work Together
               </h2>
-              <p className="text-lg text-slate-300 mb-12 max-w-2xl mx-auto">
-                If you'd like to collaborate or discuss a product challenge, get in touch — I’m available for full-time, contract and freelance opportunities.
+              <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                If you'd like to collaborate or discuss a product challenge, get in touch — I'm available for full-time, contract and freelance opportunities.
               </p>
              
             </motion.div>
@@ -642,36 +642,36 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
+      <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Social Links */}
             <div className="flex justify-center space-x-6 mb-6">
               <a 
                 href="https://linkedin.com/in/kumaripratibha02" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
                 aria-label="LinkedIn"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
-              </a>
-              <a 
+        </a>
+        <a
                 href="https://behance.net/pratibhaagrawal" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
                 aria-label="Behance"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
                   <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.922 1.355-3.968.354-1.043-.999-1.03-2.664.354-3.968 1.297-.442 2.922-1.355 3.968-.354 1.043.999 1.03 2.664-.354 3.968zm-8.79-2.5c0 1.933-1.567 3.5-3.5 3.5s-3.5-1.567-3.5-3.5 1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5zm-.5 0c0-1.657-1.343-3-3-3s-3 1.343-3 3 1.343 3 3 3 3-1.343 3-3zm-6.5-1c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5zm-5.5 1.5c0-2.485 2.015-4.5 4.5-4.5s4.5 2.015 4.5 4.5-2.015 4.5-4.5 4.5-4.5-2.015-4.5-4.5zm4.5-3.5c-1.933 0-3.5 1.567-3.5 3.5s1.567 3.5 3.5 3.5 3.5-1.567 3.5-3.5-1.567-3.5-3.5-3.5z"/>
                 </svg>
-              </a>
-              <a 
+        </a>
+        <a
                 href="mailto:prtbh1996@gmail.com" 
-                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+                className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
                 aria-label="Email"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
@@ -680,7 +680,7 @@ export default function Home() {
               </a>
             </div>
             
-            <p className="text-slate-400 mb-4">
+            <p className="text-gray-400 mb-4">
               © 2025 Kumari Pratibha. All rights reserved.
             </p>
         

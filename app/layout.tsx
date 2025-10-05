@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   keywords: "portfolio, product designer, UI/UX designer, user research, design systems, Figma, user experience, accessibility, wireframing, prototyping",
   authors: [{ name: "Kumari Pratibha" }],
   creator: "Kumari Pratibha",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

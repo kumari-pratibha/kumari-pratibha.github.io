@@ -17,7 +17,7 @@ export default function Home() {
       setStickyMenu(window.pageYOffset > 20);
       
       // Detect active section based on scroll position
-      const sections = ['home', 'about', 'process', 'projects', 'contact'];
+      const sections = ['home', 'about', 'projects', 'contact'];
       const scrollPosition = window.pageYOffset + 100; // Offset for better detection
       
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -40,7 +40,7 @@ export default function Home() {
       image: "/images/project-1.png",
       link: "https://www.behance.net/gallery/234424951/prompt2API-A-Platform-to-create-API-using-AI",
       description: "End-to-end API management platform that helps teams create, test, and deploy APIs with AI-assisted workflows and guided UI patterns like wizard steppers and contextual help.",
-      labels: ["B2B Platform", "AI Integration", "Enterprise", "SaaS"]
+      labels: ["B2B Platform", "AI Integration", "SaaS"]
     },
     {
       title: "Dashboard - First Purchase Funnel",
@@ -48,8 +48,8 @@ export default function Home() {
       role: "Product Designer",
       image: "/images/project-02.png",
       link: "https://www.behance.net/gallery/234780151/Dashboard-First-Purchase-Funnel",
-      description: "Conversational API assistant that converts technical flows into natural language interactions to reduce cognitive load for developers and architects.",
-      labels: ["AI Assistant", "Conversational UI", "Developer Tools", "NLP"]
+      description: "A data-driven dashboard designed to visualize the complete user journey from signup to first purchase. It provides a holistic view of: User segmentation — active users, new vs returning, purchase status. Funnel analysis — tracks drop-offs across key stages like signup, cart, and payment. Conversion insights (D0, D7, D30) — measure short-term and long-term retention. Built to help businesses optimize onboarding, identify friction points, and improve conversion rates through actionable insights.",
+      labels: ["Dashboard", "Analytics", "Retention"]
     },
     {
       title: "DinEzee - Restaurant Menu App",
@@ -57,8 +57,8 @@ export default function Home() {
       role: "Product Designer",
       image: "/images/project-03.png",
       link: "https://www.behance.net/gallery/187294427/DinEzee-restaurant-menu-app",
-      description: "A progressive sandbox for prototyping, testing and validating APIs—built with accessibility and a scalable design system in mind.",
-      labels: ["Sandbox", "Testing Platform", "Accessibility", "Design System"]
+      description: "An app designed to elevate the dining experience from the moment users step into the restaurant. It features: Smart notifications — get alerts when your food arrives, even if you're away from the table. Queue management — view your waiting number and updates in real-time while waiting to be seated. Interactive menu — explore detailed information about each menu item right within the app. A seamless blend of convenience, engagement, and delight for modern dining.",
+      labels: ["Case Studies","Restaurants", "Mobile App"]
     },
     {
       title: "Blipp - A solution to simplify your Scroll",
@@ -66,8 +66,8 @@ export default function Home() {
       role: "UI/UX Designer",
       image: "/images/project-04.png",
       link: "https://www.behance.net/gallery/234483831/Blipp-A-solution-to-simplify-your-Scroll",
-      description: "Data-centric dashboards for enterprise customers focused on clarity, efficiency and improved workflows through better information architecture and visualizations.",
-      labels: ["Data Visualization", "Enterprise", "Dashboard", "Analytics"]
+      description: "Blipp is a content management app designed to help users combat doomscrolling by offering personalised control over their content consumption. \n Users can customize their feed, set content limits, and enforce mandatory breaks, all with the goal of promoting mindful consumption.",
+      labels: ["Mobile App", "Social Media", "Productivity"]
     }
   ];
 
@@ -123,16 +123,7 @@ export default function Home() {
                 >
                   About
                 </a>
-                <a 
-                  href="#process" 
-                  className={`transition-colors font-normal ${
-                    activeSection === 'process' 
-                      ? 'text-pink-500 font-medium' 
-                      : 'text-gray-600 hover:text-gray-900'
-                  }`}
-                >
-                  Process
-                </a>
+              
                 <a 
                   href="#projects" 
                   className={`transition-colors font-normal ${
@@ -191,16 +182,7 @@ export default function Home() {
                 >
                   About
                 </a>
-                <a 
-                  href="#process" 
-                  className={`transition-colors font-normal ${
-                    activeSection === 'process' 
-                      ? 'text-pink-500 font-medium' 
-                      : 'text-gray-600 hover:text-gray-900'
-                  }`}
-                >
-                  Process
-                </a>
+             
                 <a 
                   href="#projects" 
                   className={`transition-colors font-normal ${
@@ -299,7 +281,7 @@ export default function Home() {
                   <Image 
                     src="/images/hero.png" 
                     alt="Illustration showing product design concept" 
-                    className="w-full h-auto"
+                    className="w-full h-auto cursor-hello"
                     width={600}
                     height={500}
                   />
@@ -325,16 +307,25 @@ export default function Home() {
               >
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-4">
-                   
-                    <Image 
+                  <Image 
                       src="/images/about-01.png" 
                       alt="Project thumbnail" 
                       className="w-full h-64 object-cover rounded-2xl"
                       width={300}
                       height={256}
                     />
-                  
-                  </div>
+                    
+                   <Image 
+                       src="/images/about-03.png" 
+                       alt="Project thumbnail" 
+                       className="w-full h-64 object-cover rounded-2xl"
+                       width={300}
+                       height={256}
+                     />
+                     
+                   
+                    
+                    </div>
                   <div className="space-y-4 mt-8">
                     <div className="w-16 h-16 mb-8"></div>
                     <Image 
@@ -356,14 +347,45 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="space-y-8"
               >
-                <div className="space-y-4">
+                <div className="space-y-6">
                   <h4 className="text-pink-500 font-normal text-lg">About Me</h4>
-                  <h2 className="text-4xl lg:text-5xl font-normal text-gray-900">
-                    Product Designer focused on clarity, usability and scalable systems.
-                  </h2>
                   <p className="text-lg text-gray-600 leading-relaxed">
-                    I turn complex workflows into clear, human-centered products. My strengths include user research, interaction design, information architecture, and building design systems that speed delivery and ensure accessibility.
+                    I've worked across enterprise platforms, startups, and global B2B products — leading design from strategy to execution. My expertise lies in shaping complex technical products into seamless experiences through:
                   </p>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-pink-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <div>
+                        <h3 className="text-lg font-medium text-gray-900 mb-1">End-to-End Product Design</h3>
+                        <p className="text-gray-600">From research and wireframes to polished UI and developer handoff</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-pink-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <div>
+                        <h3 className="text-lg font-medium text-gray-900 mb-1">Design Systems</h3>
+                        <p className="text-gray-600">Built scalable systems from the ground up to ensure consistency and speed</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-pink-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <div>
+                        <h3 className="text-lg font-medium text-gray-900 mb-1">UX Research & Testing</h3>
+                        <p className="text-gray-600">Deep user understanding through interviews, usability studies, and A/B testing</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gray-50 rounded-xl p-6">
+                    <h3 className="text-lg font-medium text-gray-900 mb-3">Tools :</h3>
+                    <p className="text-gray-600">
+                      Figma · Adobe XD · Lovable · Bolt
+                    </p>
+                  </div>
+                  
                 </div>
 
               </motion.div>
@@ -371,131 +393,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Design Process Section */}
-        <section id="process" className="py-16 lg:py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl lg:text-5xl font-normal text-gray-900 mb-6">
-                My Design Process
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                A systematic approach to creating user-centered solutions that balance business goals with user needs.
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {/* Step 1: Research */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="text-center group"
-              >
-                <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-transparent border-2 border-pink-500 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                  </div>
-
-                </div>
-                <h3 className="text-xl font-normal text-gray-900 mb-4">Research & Discovery</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  User interviews, competitive analysis, and stakeholder alignment to understand the problem space and user needs.
-                </p>
-              </motion.div>
-
-              {/* Step 2: Ideate */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="text-center group"
-              >
-                <div className="relative mb-6">
-                <div className="w-20 h-20 bg-transparent border-2 border-pink-500 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                    </svg>
-                  </div>
-                </div>
-                <h3 className="text-xl font-normal text-gray-900 mb-4">Ideate & Conceptualize</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Brainstorming sessions, user journey mapping, and rapid prototyping to explore multiple solution directions.
-                </p>
-              </motion.div>
-
-              {/* Step 3: Design */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-center group"
-              >
-                <div className="relative mb-6">
-                <div className="w-20 h-20 bg-transparent border-2 border-pink-500 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
-                    </svg>
-                  </div>
-                </div>
-                <h3 className="text-xl font-normal text-gray-900 mb-4">Design & Prototype</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  High-fidelity designs, interactive prototypes, and design system implementation for scalable solutions.
-                </p>
-              </motion.div>
-
-              {/* Step 4: Test & Iterate */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="text-center group"
-              >
-                <div className="relative mb-6">
-                <div className="w-20 h-20 bg-transparent border-2 border-pink-500 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                </div>
-                <h3 className="text-xl font-normal text-gray-900 mb-4">Test & Iterate</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Usability testing, user feedback collection, and iterative improvements based on real user data.
-                </p>
-              </motion.div>
-            </div>
-
-            {/* Process Flow */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="mt-16 text-center"
-            >
-              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
-                <h3 className="text-2xl font-normal text-gray-900 mb-4">Collaborative Approach</h3>
-                <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                  I work closely with product managers, developers, and stakeholders throughout the entire process. 
-                  This ensures that design decisions are technically feasible, aligned with business goals, and 
-                  deliver real value to users. Regular check-ins and cross-functional collaboration are key to 
-                  creating successful products.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </section>
 
        
 
@@ -550,7 +447,7 @@ export default function Home() {
                   tabIndex={0}
                   onKeyDown={(e) => { if (e.key === 'Enter') window.open(project.link, '_blank'); }}
                 >
-                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:scale-105 border border-gray-200">
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:scale-105 border border-gray-200 h-full flex flex-col">
                     {/* Project Image */}
                     <div className="relative h-64 overflow-hidden">
                       <Image
@@ -566,29 +463,34 @@ export default function Home() {
                     </div>
                     
                     {/* Project Content */}
-                    <div className="p-6">
-                      <div className="mb-3">
-                        <h3 className="text-xl font-normal text-gray-900 group-hover:text-pink-500 transition-colors duration-300">
-                          {project.title}
-                        </h3>
-                      </div>
-                      
-                      
-                      <p className="text-gray-500 text-sm mb-2 font-normal">Description</p>
-                      <p className="text-gray-700 text-sm mb-4 leading-relaxed">{project.description}</p>
+                    <div className="p-6 flex flex-col flex-grow justify-between">
+                      <div>
+                        <div className="mb-3">
+                          <h3 className="text-xl font-normal text-gray-900 group-hover:text-pink-500 transition-colors duration-300">
+                            {project.title}
+                          </h3>
+                        </div>
+                        
+                        <p className="text-gray-500 text-sm mb-2 font-normal">Description</p>
+                        <div className="relative mb-4">
+                          <p className="text-gray-700 text-sm leading-relaxed transition-all duration-300 group-hover:line-clamp-none line-clamp-3">
+                            {project.description}
+                          </p>
+                        </div>
 
-                      {/* Labels */}
-                      <div className="mb-4">
-                        <p className="text-gray-500 text-sm mb-2 font-normal">Tags</p>
-                        <div className="flex flex-wrap gap-2">
-                          {project.labels.map((label, labelIndex) => (
-                            <span
-                              key={labelIndex}
-                              className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-normal"
-                            >
-                              {label}
-                            </span>
-                          ))}
+                        {/* Labels */}
+                        <div className="mb-4">
+                          <p className="text-gray-500 text-sm mb-2 font-normal">Tags</p>
+                          <div className="flex flex-wrap gap-2">
+                            {project.labels.map((label, labelIndex) => (
+                              <span
+                                key={labelIndex}
+                                className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-normal"
+                              >
+                                {label}
+                              </span>
+                            ))}
+                          </div>
                         </div>
                       </div>
                       

@@ -68,6 +68,15 @@ export default function Home() {
       link: "https://www.behance.net/gallery/234483831/Blipp-A-solution-to-simplify-your-Scroll",
       description: "Blipp is a content management app designed to help users combat doomscrolling by offering personalised control over their content consumption. \n Users can customize their feed, set content limits, and enforce mandatory breaks, all with the goal of promoting mindful consumption.",
       labels: ["Mobile App", "Social Media", "Productivity"]
+    },
+    {
+      title: "Design Dump - Part-time Creative Work",
+      categories: ["Product & Interface Design"],
+      role: "UI/UX Designer",
+      image: "/images/project-04.png",
+      link: "https://www.figma.com/design/qmfLTMbfU6wqu0zUJ8pnHP/KP-Design-dump?node-id=0-1&t=POeGdEbb81cLsBb1-1",
+      description: "A curated collection of design work created during part-time projects and personal exploration. This design dump showcases various UI/UX concepts, interface designs, and creative experiments that demonstrate versatility across different design styles and industries. Features a diverse range of projects from mobile app concepts to web interface designs, highlighting creative problem-solving and design thinking skills.",
+      labels: ["Design Collection", "Part-time Work", "Creative Exploration"]
     }
   ];
 

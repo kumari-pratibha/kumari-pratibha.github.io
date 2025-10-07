@@ -73,7 +73,7 @@ export default function Home() {
       title: "Design Dump - Part-time Creative Work",
       categories: ["Product & Interface Design"],
       role: "UI/UX Designer",
-      image: "/images/project-04.png",
+      image: "/images/project-05.png",
       link: "https://www.figma.com/design/qmfLTMbfU6wqu0zUJ8pnHP/KP-Design-dump?node-id=0-1&t=POeGdEbb81cLsBb1-1",
       description: "A curated collection of design work created during part-time projects and personal exploration. This design dump showcases various UI/UX concepts, interface designs, and creative experiments that demonstrate versatility across different design styles and industries. Features a diverse range of projects from mobile app concepts to web interface designs, highlighting creative problem-solving and design thinking skills.",
       labels: ["Design Collection", "Part-time Work", "Creative Exploration"]
@@ -482,7 +482,7 @@ export default function Home() {
                         
                         <p className="text-gray-500 text-sm mb-2 font-normal">Description</p>
                         <div className="relative mb-4">
-                          <p className="text-gray-700 text-sm leading-relaxed transition-all duration-300 group-hover:line-clamp-none line-clamp-3">
+                          <p className="text-gray-700 text-sm leading-relaxed transition-all duration-300 group-hover:line-clamp-none line-clamp-5">
                             {project.description}
                           </p>
                         </div>
